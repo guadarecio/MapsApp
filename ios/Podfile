@@ -1,10 +1,15 @@
 require_relative '../node_modules/react-native/scripts/react_native_pods'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
-platform :ios, '12.4'
+platform :ios, '13.0'
 install! 'cocoapods', :deterministic_uuids => false
 
+
 target 'MapsApp' do
+  # React Native Maps dependencies
+  rn_maps_path = '../node_modules/react-native-maps'
+  pod 'react-native-google-maps', :path => rn_maps_path
+
   config = use_native_modules!
 
   # Flags change depending on the env values.
@@ -40,4 +45,6 @@ target 'MapsApp' do
     )
     __apply_Xcode_12_5_M1_post_install_workaround(installer)
   end
+  
+
 end
