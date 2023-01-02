@@ -11,9 +11,9 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		24DFC63B5A0D6243DA7F4657 /* libPods-MapsApp-MapsAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBB775C9491F1291F203F9E /* libPods-MapsApp-MapsAppTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		8317C5F32EAA315A540D3E63 /* libPods-MapsApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 897FA4E6C516F987837640B9 /* libPods-MapsApp.a */; };
+		D1CFB26EC71A4CE1730FE9F6 /* libPods-MapsApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF04BD134E2D2E932196548 /* libPods-MapsApp.a */; };
+		F46C8B760500EE3652DC2023 /* libPods-MapsApp-MapsAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13BF2D5197880FC86465FE1E /* libPods-MapsApp-MapsAppTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,19 +30,19 @@
 		00E356EE1AD99517003FC87E /* MapsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* MapsAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapsAppTests.m; sourceTree = "<group>"; };
-		06FFCE6E220E9FB9F48C5F98 /* Pods-MapsApp-MapsAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapsApp-MapsAppTests.release.xcconfig"; path = "Target Support Files/Pods-MapsApp-MapsAppTests/Pods-MapsApp-MapsAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		0EF04BD134E2D2E932196548 /* libPods-MapsApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MapsApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07F961A680F5B00A75B9A /* MapsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = MapsApp/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = MapsApp/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = MapsApp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = MapsApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = MapsApp/main.m; sourceTree = "<group>"; };
-		4CBB775C9491F1291F203F9E /* libPods-MapsApp-MapsAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MapsApp-MapsAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		73B40D8B800A56AE85ABCF35 /* Pods-MapsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapsApp.debug.xcconfig"; path = "Target Support Files/Pods-MapsApp/Pods-MapsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		13BF2D5197880FC86465FE1E /* libPods-MapsApp-MapsAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MapsApp-MapsAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		670F1218F6C50A0AA0615C25 /* Pods-MapsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapsApp.release.xcconfig"; path = "Target Support Files/Pods-MapsApp/Pods-MapsApp.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = MapsApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		897FA4E6C516F987837640B9 /* libPods-MapsApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MapsApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		990BB242450DBFEEB758C977 /* Pods-MapsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapsApp.release.xcconfig"; path = "Target Support Files/Pods-MapsApp/Pods-MapsApp.release.xcconfig"; sourceTree = "<group>"; };
-		DA0ECBBB216A4C2D13515B1E /* Pods-MapsApp-MapsAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapsApp-MapsAppTests.debug.xcconfig"; path = "Target Support Files/Pods-MapsApp-MapsAppTests/Pods-MapsApp-MapsAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		878CAC38BA792BC5ED87DABF /* Pods-MapsApp-MapsAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapsApp-MapsAppTests.debug.xcconfig"; path = "Target Support Files/Pods-MapsApp-MapsAppTests/Pods-MapsApp-MapsAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CBFB7E3BC82CCFCAD3F0A440 /* Pods-MapsApp-MapsAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapsApp-MapsAppTests.release.xcconfig"; path = "Target Support Files/Pods-MapsApp-MapsAppTests/Pods-MapsApp-MapsAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		DD9A9BC3C4935B3C1FC9CCCC /* Pods-MapsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapsApp.debug.xcconfig"; path = "Target Support Files/Pods-MapsApp/Pods-MapsApp.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -51,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24DFC63B5A0D6243DA7F4657 /* libPods-MapsApp-MapsAppTests.a in Frameworks */,
+				F46C8B760500EE3652DC2023 /* libPods-MapsApp-MapsAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8317C5F32EAA315A540D3E63 /* libPods-MapsApp.a in Frameworks */,
+				D1CFB26EC71A4CE1730FE9F6 /* libPods-MapsApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,8 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				897FA4E6C516F987837640B9 /* libPods-MapsApp.a */,
-				4CBB775C9491F1291F203F9E /* libPods-MapsApp-MapsAppTests.a */,
+				0EF04BD134E2D2E932196548 /* libPods-MapsApp.a */,
+				13BF2D5197880FC86465FE1E /* libPods-MapsApp-MapsAppTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -140,10 +140,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				73B40D8B800A56AE85ABCF35 /* Pods-MapsApp.debug.xcconfig */,
-				990BB242450DBFEEB758C977 /* Pods-MapsApp.release.xcconfig */,
-				DA0ECBBB216A4C2D13515B1E /* Pods-MapsApp-MapsAppTests.debug.xcconfig */,
-				06FFCE6E220E9FB9F48C5F98 /* Pods-MapsApp-MapsAppTests.release.xcconfig */,
+				DD9A9BC3C4935B3C1FC9CCCC /* Pods-MapsApp.debug.xcconfig */,
+				670F1218F6C50A0AA0615C25 /* Pods-MapsApp.release.xcconfig */,
+				878CAC38BA792BC5ED87DABF /* Pods-MapsApp-MapsAppTests.debug.xcconfig */,
+				CBFB7E3BC82CCFCAD3F0A440 /* Pods-MapsApp-MapsAppTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -155,12 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "MapsAppTests" */;
 			buildPhases = (
-				89D708E2AE58B7E8CC4E3A55 /* [CP] Check Pods Manifest.lock */,
+				0744EB2B9C3C6B64E9CAE6D4 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				F84218F04CC1421D552886F4 /* [CP] Embed Pods Frameworks */,
-				EE869D86CBFB81F257B51383 /* [CP] Copy Pods Resources */,
+				F7D85791F1F372C746C51B73 /* [CP] Embed Pods Frameworks */,
+				13AA9BF3E73C8E61A9900F63 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,14 +176,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "MapsApp" */;
 			buildPhases = (
-				A73644FC6C2BD55F944129A5 /* [CP] Check Pods Manifest.lock */,
+				1157504E20F3DA7044CBFE2F /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				0DE6BF3F92FCD57AC0EF2167 /* [CP] Embed Pods Frameworks */,
-				4CE8BC41DAA492A5AD8EA405 /* [CP] Copy Pods Resources */,
+				8AD0AD7FEB8AE9EB0CC32650 /* [CP] Embed Pods Frameworks */,
+				73ACE89D7F7B8ED02D8FEF6A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -266,41 +266,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		0DE6BF3F92FCD57AC0EF2167 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MapsApp/Pods-MapsApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MapsApp/Pods-MapsApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MapsApp/Pods-MapsApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4CE8BC41DAA492A5AD8EA405 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MapsApp/Pods-MapsApp-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MapsApp/Pods-MapsApp-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MapsApp/Pods-MapsApp-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		89D708E2AE58B7E8CC4E3A55 /* [CP] Check Pods Manifest.lock */ = {
+		0744EB2B9C3C6B64E9CAE6D4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -322,7 +288,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A73644FC6C2BD55F944129A5 /* [CP] Check Pods Manifest.lock */ = {
+		1157504E20F3DA7044CBFE2F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -344,7 +310,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EE869D86CBFB81F257B51383 /* [CP] Copy Pods Resources */ = {
+		13AA9BF3E73C8E61A9900F63 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -361,7 +327,41 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MapsApp-MapsAppTests/Pods-MapsApp-MapsAppTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F84218F04CC1421D552886F4 /* [CP] Embed Pods Frameworks */ = {
+		73ACE89D7F7B8ED02D8FEF6A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MapsApp/Pods-MapsApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MapsApp/Pods-MapsApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MapsApp/Pods-MapsApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AD0AD7FEB8AE9EB0CC32650 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MapsApp/Pods-MapsApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MapsApp/Pods-MapsApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MapsApp/Pods-MapsApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7D85791F1F372C746C51B73 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -430,7 +430,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA0ECBBB216A4C2D13515B1E /* Pods-MapsApp-MapsAppTests.debug.xcconfig */;
+			baseConfigurationReference = 878CAC38BA792BC5ED87DABF /* Pods-MapsApp-MapsAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -457,7 +457,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06FFCE6E220E9FB9F48C5F98 /* Pods-MapsApp-MapsAppTests.release.xcconfig */;
+			baseConfigurationReference = CBFB7E3BC82CCFCAD3F0A440 /* Pods-MapsApp-MapsAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -481,7 +481,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73B40D8B800A56AE85ABCF35 /* Pods-MapsApp.debug.xcconfig */;
+			baseConfigurationReference = DD9A9BC3C4935B3C1FC9CCCC /* Pods-MapsApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -507,7 +507,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 990BB242450DBFEEB758C977 /* Pods-MapsApp.release.xcconfig */;
+			baseConfigurationReference = 670F1218F6C50A0AA0615C25 /* Pods-MapsApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

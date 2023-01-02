@@ -3,7 +3,8 @@ import {View, Text, TouchableOpacity, FlatList, Image} from 'react-native';
 import {DataContext} from '../Context/DataContext';
 
 const PoisList = ({navigation}) => {
-  const {pois} = useContext(DataContext);
+  const data = useContext(DataContext);
+  const pois = data?.pois;
 
   return (
     <View style={{flex: 1}}>
