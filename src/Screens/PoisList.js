@@ -1,20 +1,57 @@
 import React, {useContext} from 'react';
 import {View, Text, TouchableOpacity, FlatList, Image} from 'react-native';
 import {DataContext} from '../Context/DataContext';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const PoisList = ({navigation}) => {
-  const data = useContext(DataContext);
+  const {data, modalVisible, setModalVisible, setSelectedMarker} =
+    useContext(DataContext);
   const pois = data?.pois;
+  console.log(data);
+
+  const handleModal = marker => {
+    setSelectedMarker(marker);
+    setModalVisible(!modalVisible);
+  };
 
   return (
     <View style={{flex: 1}}>
-      <Text>Pois List</Text>
+      <View
+        style={{
+          backgroundColor: '#3a3a3a',
+          height: 50,
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+        }}>
+        <Text style={{color: 'white', fontSize: 22}}>
+          {data?.name.slice(15)}
+        </Text>
+
+        <View
+          style={{
+            backgroundColor: '#3a3a3a',
+            height: 50,
+            flexDirection: 'row',
+            justifyContent: 'space-between',
+          }}>
+          <Ionicons name="location-sharp" size={25} color="white" />
+          <Text style={{color: 'white', fontSize: 22}}>{data?.pois_count}</Text>
+        </View>
+        <View>
+          <Ionicons name="menu" size={25} color="white" />
+        </View>
+      </View>
+      <View style={{backgroundColor: '#202020', height: 50}}>
+        <Text style={{color: 'white'}}>
+          Ordenar: <Text style={{fontWeight: 'bold'}}>Popularidad</Text>
+        </Text>
+      </View>
 
       <FlatList
         data={pois}
         renderItem={({item}) => {
           return (
-            <TouchableOpacity onPress={() => {}}>
+            <TouchableOpacity onPress={() => handleModal(item)}>
               <View
                 style={{
                   justifyContent: 'space-between',
