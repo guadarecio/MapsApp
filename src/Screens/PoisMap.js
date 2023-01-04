@@ -4,15 +4,20 @@ import {DataContext} from '../Context/DataContext';
 import MapView, {PROVIDER_GOOGLE, Marker, Polygon} from 'react-native-maps';
 
 const PoisMap = ({navigation}) => {
-  const data = useContext(DataContext);
+  const {data, modalVisible, setModalVisible, setSelectedMarker} =
+    useContext(DataContext);
   const pois = data?.pois.slice(0, 11);
 
   const arrayDeCoords = data?.coordinates.split('0.0 ');
-
   const polygonCoords = arrayDeCoords?.map(el => {
     const sp = el.split(',');
     return {longitude: Number(sp[0]), latitude: Number(sp[1])};
   });
+
+  const handleModal = marker => {
+    setSelectedMarker(marker);
+    setModalVisible(!modalVisible);
+  };
 
   return (
     <View style={{flex: 1}}>
@@ -35,9 +40,9 @@ const PoisMap = ({navigation}) => {
         }}>
         <Polygon fillColor="lightyellow" coordinates={polygonCoords} />
         {pois.map((marker, index) => {
-          console.log('guada', marker);
           return (
             <Marker
+              onPress={() => handleModal(marker)}
               key={index}
               coordinate={{
                 latitude: marker.latitude,
