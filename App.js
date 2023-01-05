@@ -6,12 +6,15 @@ import AppModal from './src/Screens/Modal/Modal';
 
 export default function App() {
   return (
-    <SafeAreaView style={{flex: 1, backgroundColor: '#cccccc'}}>
-      <StatusBar barStyle="light-content" />
-      <DataProvider>
-        <RootNavigator />
-        <AppModal />
-      </DataProvider>
-    </SafeAreaView>
+    <>
+      <SafeAreaView style={{flex: 0, backgroundColor: '#cccccc'}} />
+      <SafeAreaView style={{flex: 1, backgroundColor: '#666666'}}>
+        <StatusBar barStyle="light-content" />
+        <DataProvider>
+          <RootNavigator />
+          <AppModal />
+        </DataProvider>
+      </SafeAreaView>
+    </>
   );
 }

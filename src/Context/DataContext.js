@@ -19,6 +19,11 @@ export const DataProvider = ({children}) => {
     apiCall();
   }, []);
 
+  const handleModal = marker => {
+    setSelectedMarker(marker);
+    setModalVisible(!modalVisible);
+  };
+
   return (
     <DataContext.Provider
       value={{
@@ -27,6 +32,7 @@ export const DataProvider = ({children}) => {
         setModalVisible,
         selectedMarker,
         setSelectedMarker,
+        handleModal,
       }}>
       {children}
     </DataContext.Provider>

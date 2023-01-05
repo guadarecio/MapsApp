@@ -1,12 +1,12 @@
 import React, {useContext} from 'react';
-import {View, StyleSheet} from 'react-native';
+import {View} from 'react-native';
 import {DataContext} from '../../Context/DataContext';
 import Header from '../../Components/Header';
 import PoisFilter from './PoisFilter';
 import PoisList from './PoisList';
 import Footer from '../../Components/Footer';
 
-const PoisScreen = () => {
+const PoisListScreen = () => {
   const {data} = useContext(DataContext);
   const pois = data?.pois;
 
@@ -24,4 +24,4 @@ const PoisScreen = () => {
   );
 };
 
-export default PoisScreen;
+export default PoisListScreen;

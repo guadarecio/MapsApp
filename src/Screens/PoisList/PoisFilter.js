@@ -1,5 +1,6 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
+import Icon from 'react-native-vector-icons/Entypo';
 
 const PoisFilter = () => {
   return (
@@ -7,7 +8,7 @@ const PoisFilter = () => {
       <Text style={{color: 'white', paddingLeft: 5}}>
         Ordenar: <Text style={{fontWeight: 'bold'}}>Popularidad</Text>
       </Text>
-      <Text style={styles.points}>...</Text>
+      <Icon name="dots-three-horizontal" size={26} style={styles.points} />
     </View>
   );
 };
@@ -25,6 +26,5 @@ const styles = StyleSheet.create({
   points: {
     color: 'white',
     paddingRight: 10,
-    fontSize: 20,
   },
 });

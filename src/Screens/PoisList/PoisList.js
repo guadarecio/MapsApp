@@ -11,13 +11,8 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import {DataContext} from '../../Context/DataContext';
 
 const PoisList = ({pois}) => {
-  const {modalVisible, setModalVisible, setSelectedMarker} =
-    useContext(DataContext);
+  const {handleModal} = useContext(DataContext);
 
-  const handleModal = marker => {
-    setSelectedMarker(marker);
-    setModalVisible(!modalVisible);
-  };
   return (
     <FlatList
       data={pois}
