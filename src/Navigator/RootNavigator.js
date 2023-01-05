@@ -3,7 +3,7 @@ import {View, Text, Button} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import PoisMap from '../Screens/PoisMap';
-import PoisList from '../Screens/PoisList';
+import PoisList from '../Screens/PoisList/PoisScreen';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 const Stack = createNativeStackNavigator();

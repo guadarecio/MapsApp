@@ -8,6 +8,8 @@ import MapView, {
   Callout,
 } from 'react-native-maps';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import Header from '../Components/Header';
+import Footer from '../Components/Footer';
 
 const PoisMap = ({navigation}) => {
   const {data, modalVisible, setModalVisible, setSelectedMarker} =
@@ -27,50 +29,11 @@ const PoisMap = ({navigation}) => {
 
   return (
     <View style={{flex: 1}}>
-      <View
-        style={{
-          backgroundColor: '#3a3a3a',
-          height: 50,
-          flexDirection: 'row',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-        }}>
-        <Text
-          style={{
-            color: 'white',
-            fontSize: 20,
-            fontWeight: '600',
-            paddingLeft: 5,
-          }}>
-          {data?.name.toUpperCase().slice(15)}
-        </Text>
-        <View
-          style={{
-            flexDirection: 'row',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            backgroundColor: '#f35412',
-          }}>
-          <View
-            style={{
-              backgroundColor: '#3a3a3a',
-              height: 50,
-              flexDirection: 'row',
-              justifyContent: 'space-between',
-              alignItems: 'center',
-              paddingRight: 15,
-            }}>
-            <Ionicons name="location-sharp" size={25} color="white" />
-            <Text style={{color: 'white', fontSize: 22}}>
-              {data?.pois_count}
-            </Text>
-          </View>
-          <View
-            style={{width: 40, justifyContent: 'center', alignItems: 'center'}}>
-            <Ionicons name="menu" size={25} color="white" />
-          </View>
-        </View>
-      </View>
+      <Header
+        name={data?.name.toUpperCase().slice(15)}
+        poisCount={data?.pois_count}
+        menuColor="#f35412"
+      />
       <MapView
         camera={{
           center: {
@@ -133,26 +96,7 @@ const PoisMap = ({navigation}) => {
         })}
       </MapView>
 
-      <TouchableOpacity
-        onPress={() => navigation.navigate('PoisList')}
-        style={{
-          backgroundColor: '#676767',
-          height: 50,
-          flexDirection: 'row',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          paddingHorizontal: 10,
-        }}>
-        <Text
-          style={{
-            color: '#cccccc',
-            fontWeight: 'bold',
-            fontSize: 16,
-          }}>
-          MOSTRAR EN LISTADO
-        </Text>
-        <Ionicons name="list" size={25} color="#cccccc" />
-      </TouchableOpacity>
+      <Footer title="MOSTRAR EN LISTADO" iconName="list" />
     </View>
   );
 };

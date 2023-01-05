@@ -24,7 +24,7 @@ const AppModal = () => {
     <Modal animationType="slide" transparent={true} visible={modalVisible}>
       <ScrollView style={styles.centeredView}>
         <View style={styles.modalView}>
-          <ModalHeader imageUrl={category.icon.url} name={name} />
+          <ModalHeader imageUrl={category?.icon.url} name={name} />
           <ModalCarrousel data={gallery_images} />
           <ModalAudio />
           <ModalMap

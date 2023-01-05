@@ -7,26 +7,14 @@ const ModalMap = ({likes, description, lat, long}) => {
   return (
     <>
       <View>
-        <View
-          style={{
-            flexDirection: 'row',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            paddingHorizontal: 20,
-          }}>
+        <View style={styles.subContainer}>
           <Text style={{fontWeight: 'bold'}}>Acerca de este local:</Text>
-
           <View style={{flexDirection: 'row', alignItems: 'center'}}>
             <Text style={{paddingRight: 15, color: '#cccccc'}}>{likes}</Text>
             <Ionicons name="heart" size={25} color="#cccccc" />
           </View>
         </View>
-        <Text
-          style={{
-            color: '#666666',
-
-            paddingHorizontal: 20,
-          }}>
+        <Text style={{color: '#666666', paddingHorizontal: 20}}>
           {description}
         </Text>
       </View>
@@ -57,10 +45,7 @@ const ModalMap = ({likes, description, lat, long}) => {
               source={{
                 uri: 'http://cityme.s3-website-eu-west-1.amazonaws.com/default/0001/02/9d4bf14631e3b5bc8114514d15e6d279567186fa.png',
               }}
-              style={{
-                width: 60,
-                height: 60,
-              }}
+              style={{width: 60, height: 60}}
               resizeMode="contain"
             />
           </Marker>
@@ -72,4 +57,11 @@ const ModalMap = ({likes, description, lat, long}) => {
 
 export default ModalMap;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  subContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingHorizontal: 20,
+  },
+});
