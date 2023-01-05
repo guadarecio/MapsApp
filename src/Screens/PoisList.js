@@ -22,28 +22,62 @@ const PoisList = ({navigation}) => {
           height: 50,
           flexDirection: 'row',
           justifyContent: 'space-between',
+          alignItems: 'center',
         }}>
-        <Text style={{color: 'white', fontSize: 22}}>
-          {data?.name.slice(15)}
+        <Text
+          style={{
+            color: 'white',
+            fontSize: 20,
+            fontWeight: '600',
+            paddingLeft: 5,
+          }}>
+          {data?.name.toUpperCase().slice(15)}
         </Text>
-
         <View
           style={{
-            backgroundColor: '#3a3a3a',
-            height: 50,
             flexDirection: 'row',
             justifyContent: 'space-between',
+            alignItems: 'center',
+            backgroundColor: 'black',
           }}>
-          <Ionicons name="location-sharp" size={25} color="white" />
-          <Text style={{color: 'white', fontSize: 22}}>{data?.pois_count}</Text>
-        </View>
-        <View>
-          <Ionicons name="menu" size={25} color="white" />
+          <View
+            style={{
+              backgroundColor: '#3a3a3a',
+              height: 50,
+              flexDirection: 'row',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              paddingRight: 15,
+            }}>
+            <Ionicons name="location-sharp" size={25} color="white" />
+            <Text style={{color: 'white', fontSize: 22}}>
+              {data?.pois_count}
+            </Text>
+          </View>
+          <View
+            style={{width: 40, justifyContent: 'center', alignItems: 'center'}}>
+            <Ionicons name="menu" size={25} color="white" />
+          </View>
         </View>
       </View>
-      <View style={{backgroundColor: '#202020', height: 50}}>
-        <Text style={{color: 'white'}}>
+      <View
+        style={{
+          backgroundColor: '#202020',
+          height: 50,
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+        }}>
+        <Text style={{color: 'white', paddingLeft: 5}}>
           Ordenar: <Text style={{fontWeight: 'bold'}}>Popularidad</Text>
+        </Text>
+        <Text
+          style={{
+            color: 'white',
+            paddingRight: 10,
+            fontSize: 20,
+          }}>
+          ...
         </Text>
       </View>
 
@@ -54,10 +88,11 @@ const PoisList = ({navigation}) => {
             <TouchableOpacity onPress={() => handleModal(item)}>
               <View
                 style={{
-                  justifyContent: 'space-between',
                   alignItems: 'center',
                   flexDirection: 'row',
-                  marginRight: 20,
+
+                  borderBottomWidth: 1,
+                  borderBottomColor: '#cccccc',
                 }}>
                 <Image
                   source={{
@@ -66,19 +101,57 @@ const PoisList = ({navigation}) => {
                   resizeMode={'cover'}
                   style={{
                     width: 100,
-                    height: 100,
+                    height: 80,
                   }}
                 />
-                <Text>{item.name}</Text>
-                <Text>{item.likes_count}</Text>
+                <View
+                  style={{
+                    flex: 1,
+                    justifyContent: 'space-between',
+                    flexDirection: 'row',
+                    paddingHorizontal: 15,
+                  }}>
+                  <Text>{item.name}</Text>
+
+                  <View
+                    style={{
+                      flexDirection: 'row',
+                      alignItems: 'center',
+                    }}>
+                    <Text
+                      style={{
+                        paddingRight: 5,
+                      }}>
+                      {item.likes_count}
+                    </Text>
+                    <Ionicons name="heart" size={25} color="#cccccc" />
+                  </View>
+                </View>
               </View>
             </TouchableOpacity>
           );
         }}
       />
 
-      <TouchableOpacity onPress={() => navigation.navigate('PoisMap')}>
-        <Text>MOSTRAR EN MAPA</Text>
+      <TouchableOpacity
+        onPress={() => navigation.navigate('PoisMap')}
+        style={{
+          backgroundColor: '#676767',
+          height: 50,
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          paddingHorizontal: 10,
+        }}>
+        <Text
+          style={{
+            color: '#cccccc',
+            fontWeight: 'bold',
+            fontSize: 16,
+          }}>
+          MOSTRAR EN MAPA
+        </Text>
+        <Ionicons name="map" size={25} color="#cccccc" />
       </TouchableOpacity>
     </View>
   );
