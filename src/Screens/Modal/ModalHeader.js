@@ -17,7 +17,7 @@ const ModalHeader = ({imageUrl, name}) => {
       <TouchableOpacity
         onPress={() => setModalVisible(!modalVisible)}
         style={styles.modalButton}>
-        <Text style={{color: '#cccccc', fontSize: 22}}>X</Text>
+        <Text style={{color: '#666666', fontSize: 22}}>X</Text>
       </TouchableOpacity>
     </View>
   );

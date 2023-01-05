@@ -31,7 +31,6 @@ export const DataProvider = ({children}) => {
         modalVisible,
         setModalVisible,
         selectedMarker,
-        setSelectedMarker,
         handleModal,
       }}>
       {children}
