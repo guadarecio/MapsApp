@@ -5,10 +5,13 @@ import Header from '../../Components/Header';
 import PoisFilter from './PoisFilter';
 import PoisList from './PoisList';
 import Footer from '../../Components/Footer';
+import Loader from '../../Components/Loader';
 
 const PoisListScreen = () => {
-  const {data} = useContext(DataContext);
+  const {data, loading} = useContext(DataContext);
   const pois = data?.pois;
+
+  if (loading) return <Loader />;
 
   return (
     <View style={{flex: 1}}>

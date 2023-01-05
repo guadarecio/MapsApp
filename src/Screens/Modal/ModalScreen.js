@@ -7,7 +7,7 @@ import ModalAudio from './ModalAudio';
 import ModalMap from './ModalMap';
 import ModalEvents from './ModalEvents';
 
-const AppModal = () => {
+const ModalScreen = () => {
   const data = useContext(DataContext);
   const {modalVisible, selectedMarker} = data;
   const {
@@ -60,4 +60,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default AppModal;
+export default ModalScreen;

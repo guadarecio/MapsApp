@@ -2,7 +2,7 @@ import * as React from 'react';
 import {SafeAreaView, StatusBar} from 'react-native';
 import {DataProvider} from './src/Context/DataContext';
 import RootNavigator from './src/Navigator/RootNavigator';
-import AppModal from './src/Screens/Modal/Modal';
+import ModalScreen from './src/Screens/Modal/ModalScreen';
 
 export default function App() {
   return (
@@ -12,7 +12,7 @@ export default function App() {
         <StatusBar barStyle="light-content" />
         <DataProvider>
           <RootNavigator />
-          <AppModal />
+          <ModalScreen />
         </DataProvider>
       </SafeAreaView>
     </>
